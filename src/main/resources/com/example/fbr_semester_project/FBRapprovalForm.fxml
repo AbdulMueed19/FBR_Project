@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fbr_semester_project.fbrApprovalController">
+   <center>
+      <AnchorPane prefHeight="414.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="600.0" opacity="0.08" pickOnBounds="true">
+               <image>
+                  <Image url="@FBR%20Govt%20Form%20pic.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="16.0" layoutY="17.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="568.0" style="-fx-background-color: #085091;" text="FBR OFFICIAL" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Button>
+            <Text layoutX="124.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FILER STATUS :">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="124.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TAX ID :">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Text>
+            <ButtonBar layoutX="286.0" layoutY="334.0" prefHeight="40.0" prefWidth="298.0">
+              <buttons>
+                <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="137.0" style="-fx-background-color: #085091;" text="CLOSE" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="updateStatus" mnemonicParsing="false" onMouseClicked="#onUpdateClick" style="-fx-background-color: #085091;" text="UPDATE STATUS" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+              </buttons>
+            </ButtonBar>
+            <ChoiceBox fx:id="status" layoutX="280.0" layoutY="183.0" prefWidth="150.0" />
+            <Text layoutX="200.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(For Official Use Only)" wrappingWidth="217.28143310546875">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="comments" alignment="TOP_LEFT" layoutX="280.0" layoutY="228.0" prefHeight="97.0" prefWidth="300.0" promptText="Enter Detailed Comments" />
+            <Text layoutX="124.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comments:">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="fbr_taxid" layoutX="281.0" layoutY="144.0" promptText="Enter Tax ID" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

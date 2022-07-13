@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="798.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fbr_semester_project.govtController">
+   <top>
+      <AnchorPane prefHeight="798.0" prefWidth="1024.0" style="-fx-background-color: #0b4a1d;" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tablegovt" layoutX="123.0" layoutY="319.0" prefHeight="338.0" prefWidth="777.0">
+              <columns>
+                <TableColumn fx:id="tableid" prefWidth="75.0" text="TAX ID" />
+                  <TableColumn fx:id="tablecalculated" prefWidth="170.0" text="Calculated TAX" />
+                  <TableColumn fx:id="tablepaid" prefWidth="202.0" text="Paid TAX" />
+                  <TableColumn fx:id="tableperiod" prefWidth="180.0" text="Period Start" />
+                  <TableColumn fx:id="tableperiodend" prefWidth="149.0" text="Period End" />
+              </columns>
+            </TableView>
+            <ButtonBar layoutX="553.0" layoutY="700.0" prefHeight="40.0" prefWidth="345.0">
+              <buttons>
+                <Button mnemonicParsing="false" onMouseClicked="#onGovtClicked" prefHeight="33.0" prefWidth="222.0" text="Allocate TAX">
+                     <font>
+                        <Font name="Century Gothic Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onMouseClicked="#onBackClicked" prefHeight="34.0" text="Back">
+                     <font>
+                        <Font name="Century Gothic Bold" size="14.0" />
+                     </font>
+                  </Button>
+              </buttons>
+            </ButtonBar>
+            <Button layoutX="14.0" layoutY="205.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="994.0" text="GOVERNMENT OFFICIAL">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="172.0" fitWidth="821.0" layoutX="50.0" layoutY="21.0" pickOnBounds="true">
+               <image>
+                  <Image url="@60b0624b75e4e.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="168.0" fitWidth="173.0" layoutX="763.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ministry%20of%20finance.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="997.0" layoutX="13.0" layoutY="765.0" pickOnBounds="true">
+               <image>
+                  <Image url="@GovtFormlogin.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="705.0" layoutY="662.0" prefHeight="34.0" prefWidth="102.0" text="Tax Collected" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="change" layoutX="805.0" layoutY="663.0" prefHeight="34.0" prefWidth="102.0" text="PKR 0/-" textFill="#aba9a9">
+               <font>
+                  <Font name="Arial Narrow Bold" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="288.0" fitWidth="451.0" layoutX="282.0" layoutY="349.0" opacity="0.09" pickOnBounds="true">
+               <image>
+                  <Image url="@ministry%20of%20finance.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

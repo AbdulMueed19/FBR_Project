@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fbr_semester_project.govtloginController">
+   <center>
+      <AnchorPane prefHeight="522.0" prefWidth="780.0" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <AnchorPane prefHeight="798.0" prefWidth="1024.0" style="-fx-background-color: #0f6130;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="211.0" fitWidth="979.0" layoutX="15.0" layoutY="6.0" pickOnBounds="true">
+               <image>
+                  <Image url="@60b0624b75e4e.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="149.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNIC">
+               <font>
+                  <Font name="Century Gothic Bold" size="19.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="146.0" layoutY="546.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PASSWORD">
+               <font>
+                  <Font name="Century Gothic Bold" size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="govtcnic" layoutX="279.0" layoutY="463.0" prefHeight="30.0" prefWidth="224.0" promptText="Enter CNIC (without Dashes)" />
+            <PasswordField fx:id="govtpassword" layoutX="279.0" layoutY="523.0" prefHeight="29.0" prefWidth="223.0" promptText="Enter Password" />
+            <Button fx:id="govtlogin" layoutX="336.0" layoutY="600.0" mnemonicParsing="false" onMouseClicked="#onlogingotclicked" prefHeight="40.0" prefWidth="110.0" text="LOGIN">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="492.0" fitWidth="424.0" layoutX="570.0" layoutY="218.0" pickOnBounds="true">
+               <image>
+                  <Image url="@GovtLoginForm.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="1008.0" layoutX="14.0" layoutY="732.0" pickOnBounds="true">
+               <image>
+                  <Image url="@GovtFormlogin.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="318.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME">
+               <font>
+                  <Font name="Century Gothic Bold" size="26.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="302.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@FBRLoginPic.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="131.0" fitWidth="146.0" layoutX="848.0" layoutY="14.0" pickOnBounds="true">
+               <image>
+                  <Image url="@ministry%20of%20finance.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="215.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Government Officials Only)">
+               <font>
+                  <Font name="Century Gothic Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="585.0" prefWidth="1024.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

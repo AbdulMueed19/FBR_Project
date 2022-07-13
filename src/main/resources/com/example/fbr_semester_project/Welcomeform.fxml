@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="689.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fbr_semester_project.welcomecontroller">
+   <center>
+      <AnchorPane prefHeight="474.0" prefWidth="677.0" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <AnchorPane prefHeight="485.0" prefWidth="672.0" style="-fx-background-color: #6c448c;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="331.0" fitWidth="316.0" layoutX="368.0" layoutY="152.0" pickOnBounds="true">
+               <image>
+                  <Image url="@government-of-pakistan-logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="485.0" fitWidth="689.0" opacity="0.64" pickOnBounds="true">
+               <image>
+                  <Image url="@Tax-Efficient-27098055e509447d8d45a9fe4c131669.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="118.0" fitWidth="682.0" layoutX="5.0" layoutY="23.0" pickOnBounds="true">
+               <image>
+                  <Image url="@fbr.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="-1.0" layoutY="192.0" stroke="#ea00ff" strokeType="OUTSIDE" text="WELCOME" textAlignment="CENTER" wrappingWidth="689.0">
+               <font>
+                  <Font name="Century Gothic Bold" size="38.0" />
+               </font>
+            </Text>
+            <Button fx:id="taxpayerform" layoutX="236.0" layoutY="230.0" mnemonicParsing="false" onMouseClicked="#ongettingClicked" prefHeight="31.0" prefWidth="214.0" style="-fx-background-color: #CBC3E3;" text="TAX Payer">
+               <font>
+                  <Font name="Century Gothic Bold Italic" size="21.0" />
+               </font>
+               <effect>
+                  <DropShadow height="45.92" radius="22.825000000000003" spread="0.11" width="47.38">
+                     <input>
+                        <Glow />
+                     </input>
+                     <color>
+                        <Color red="0.8995370268821716" green="0.1388888955116272" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Button fx:id="fbrofficialform" layoutX="236.0" layoutY="295.0" mnemonicParsing="false" onMouseClicked="#ongettingClickedfbr" prefHeight="34.0" prefWidth="214.0" style="-fx-background-color: #CBC3E3;" text="FBR Official">
+               <font>
+                  <Font name="Century Gothic Bold Italic" size="21.0" />
+               </font>
+               <effect>
+                  <DropShadow height="45.92" radius="22.825000000000003" spread="0.11" width="47.38">
+                     <input>
+                        <Glow />
+                     </input>
+                     <color>
+                        <Color red="0.8995370268821716" green="0.1388888955116272" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Button fx:id="govtviewform" layoutX="237.0" layoutY="357.0" mnemonicParsing="false" onMouseClicked="#ongettingClickedgovt" prefHeight="34.0" prefWidth="213.0" style="-fx-background-color: #CBC3E3;" text="Govt. Official">
+               <font>
+                  <Font name="Century Gothic Bold Italic" size="21.0" />
+               </font>
+               <effect>
+                  <DropShadow height="45.92" radius="22.825000000000003" spread="0.11" width="47.38">
+                     <input>
+                        <Glow />
+                     </input>
+                     <color>
+                        <Color red="0.8995370268821716" green="0.1388888955116272" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Label layoutX="411.0" layoutY="463.0" text="Project By Mishal | Talha| Mueed" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <AnchorPane prefHeight="0.0" prefWidth="688.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
